@@ -6,38 +6,39 @@ function promptInfo() {
   return inquirer.prompt([
     {
       type: "input",
-      name: "GitHub",
+      name: "gitHub",
       message: "What is your GitHub username?",
     },
     {
       type: "input",
-      name: "GitHub",
-      message: "What is your GitHub username?",
+      name: "title",
+      message: "What is the project title?",
     },
     {
       type: "input",
-      name: "GitHub",
-      message: "What is your GitHub username?",
+      name: "description",
+      message: "What is the project description?",
     },
     {
       type: "input",
-      name: "GitHub",
-      message: "What is your GitHub username?",
+      name: "installation",
+      message: "What are the steps required for installation?",
     },
     {
       type: "input",
-      name: "GitHub",
-      message: "What is your GitHub username?",
+      name: "usage",
+      message: "What are the usage instructions and examples?",
     },
     {
       type: "input",
-      name: "GitHub",
-      message: "What is your GitHub username?",
+      name: "license",
+      message: "What open source license would you like to use?",
     },
     {
       type: "input",
-      name: "GitHub",
-      message: "What is your GitHub username?",
+      name: "contributing",
+      message: "How can others contribute?",
     },
   ]);
 }
+promptInfo();

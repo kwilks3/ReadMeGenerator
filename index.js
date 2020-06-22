@@ -43,21 +43,18 @@ function promptInfo() {
   ]);
 }
 function generateMD(answers) {
-  return `
-    # ${answers.title}\n 
-    ## Description \n
-    ${answers.description} \n
-    ## Table of Contents \n
-    ## Installation \n
-    ${answers.installation}
-    `;
+  return `# ${answers.title}\n## Description \n
+${answers.description} \n
+## Table of Contents \n
+## Installation \n
+${answers.installation}`;
 }
 async function init() {
   try {
     const answers = await promptInfo();
     const md = generateMD(answers);
     await writefileAsync("README.md", md);
-    console.log("Successfully created readme");
+    console.log("Successfully created README");
   } catch (err) {
     console.log(err);
   }

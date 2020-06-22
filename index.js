@@ -2,6 +2,7 @@ const fs = require("fs");
 const inquirer = require("inquirer");
 const util = require("util");
 
+const writefileAsync = util.promisify(fs.writeFile);
 function promptInfo() {
   return inquirer.prompt([
     {
@@ -41,4 +42,25 @@ function promptInfo() {
     },
   ]);
 }
-promptInfo();
+function generateMD(answers) {
+  return `
+    # ${answers.title}\n 
+    ## Description \n
+    ${answers.description} \n
+    ## Table of Contents \n
+    ## Installation \n
+    ${answers.installation}
+    `;
+}
+async function init() {
+  try {
+    const answers = await promptInfo();
+    const md = generateMD(answers);
+    await writefileAsync("readme.md", md);
+    console.log("Successfully created readme");
+  } catch (err) {
+    console.log(err);
+  }
+}
+
+init;

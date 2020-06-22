@@ -46,6 +46,7 @@ function generateMD(answers) {
   return `# ${answers.title}\n## Description \n
 ${answers.description} \n
 ## Table of Contents \n
+- [Installation](#installation) \n
 ## Installation \n
 ${answers.installation}`;
 }

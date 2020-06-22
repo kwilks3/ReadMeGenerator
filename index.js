@@ -47,8 +47,17 @@ function generateMD(answers) {
 ${answers.description} \n
 ## Table of Contents \n
 - [Installation](#installation) \n
+- [usage](#usage) \n
+- [license](license) \n
+- [Contributing](#contributing) \n
 ## Installation \n
-${answers.installation}`;
+${answers.installation} \n
+## License \n
+${answers.license} \n
+## Contributing \n
+${answers.contributing}
+## Badges \n
+![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)`;
 }
 async function init() {
   try {

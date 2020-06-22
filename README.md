@@ -9,7 +9,7 @@ test
 
 - [usage](#usage) 
 
-- [license](license) 
+- [license](#license) 
 
 - [Contributing](#contributing) 
 
@@ -21,9 +21,14 @@ test
 
 test 
 
+## Usage 
+
+test 
+
 ## Contributing 
 
-test
+test 
+
 ## Badges 
 
 ![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)

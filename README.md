@@ -1,44 +1,43 @@
 # README Generator
-## Description 
 
-test 
+## Description
 
-Check out all of my other projects [here.](https://github.com/kwilks3) 
+Create a README using this quick and easy CLI. Input the information requested by the prompts and the README will be generated for you. Check out the demo video below in the usage section! An example readme is in the example.md file.
 
-## Table of Contents 
+Note: The README will be generated with the title README.md but I changed the name of that file.
 
-- [Installation](#installation) 
+The line below will automatically link to your GitHub respository once you provide your username!
 
-- [Usage](#usage) 
+Check out all my other projects [here.](https://github.com/kwilks3)
 
-- [License](#license) 
+## Table of Contents
 
-- [Contributing](#contributing) 
+- [Installation](#installation)
 
-## Installation 
+- [Usage](#usage)
 
-test 
+- [License](#license)
 
-## Usage 
+- [Contributing](#contributing)
 
-test 
+## Installation
 
-## Contributing 
+Fork this repo and clone it to your local machine. Run an npm install to download all the necessary dependencies. Open the file directory in your terminal and run `node index.js`
 
-test 
+Then, simply fill in all the prompts!
 
-## Badges 
+## Usage
 
-![uniquebadge](https://img.shields.io/static/v1?label=build&message=passed&color=green)
-## License 
+[Demo](https://gifs.com/gif/demo-YWw0G2)
 
-test 
+## Contributing
 
-## Tests 
+N/A
 
-test
-## Questions 
+## Badges
 
-If you have any questions, please contact me directly at wilks.kimberly@gmail.com. 
+![uniquebadge](https://img.shields.io/static/v1?label=Cool&message=README&color=pink)
 
-  
+## License
+
+MIT

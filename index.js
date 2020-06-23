@@ -75,7 +75,7 @@ ${answers.contributing} \n
     answers.badge.split(" ")[0]
   }&message=${answers.badge.split(" ")[1]}&color=${
     answers.badge.split(" ")[2]
-  }`;
+  })`;
 }
 
 // this function should wait for the prompt to be completed, then it will generate the info for the md file then create the file

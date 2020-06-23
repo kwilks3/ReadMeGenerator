@@ -15,6 +15,11 @@ function promptInfo() {
     },
     {
       type: "input",
+      name: "email",
+      message: "What is your email address?",
+    },
+    {
+      type: "input",
       name: "title",
       message: "What is the project title?",
     },
@@ -42,6 +47,11 @@ function promptInfo() {
       type: "input",
       name: "contributing",
       message: "How can others contribute?",
+    },
+    {
+      type: "input",
+      name: "test",
+      message: "How can users run tests?",
     },
     {
       type: "input",
@@ -76,6 +86,10 @@ ${answers.contributing} \n
   }&message=${answers.badge.split(" ")[1]}&color=${answers.badge.split(" ")[2]})
 ## License \n
 ${answers.license} \n
+## Tests \n
+${answers.test}
+## Questions \n
+If you have any questions, please contact me directly at ${answers.email}. \n
   `;
 }
 

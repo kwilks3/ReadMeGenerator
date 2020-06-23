@@ -4,15 +4,17 @@
 
 Create a README using this quick and easy CLI. Input the information requested by the prompts and the README will be generated for you. Check out the demo video below in the usage section!
 
+The line below will automatically link to your GitHub respository once you provide your username!
+
 Check out all my other projects [here.](https://github.com/kwilks3)
 
 ## Table of Contents
 
 - [Installation](#installation)
 
-- [usage](#usage)
+- [Usage](#usage)
 
-- [license](#license)
+- [License](#license)
 
 - [Contributing](#contributing)
 

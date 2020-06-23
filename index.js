@@ -61,8 +61,8 @@ Check out all of my other projects [here.](https://github.com/${
   }) \n
 ## Table of Contents \n
 - [Installation](#installation) \n
-- [usage](#usage) \n
-- [license](#license) \n
+- [Usage](#usage) \n
+- [License](#license) \n
 - [Contributing](#contributing) \n
 ## Installation \n
 ${answers.installation} \n

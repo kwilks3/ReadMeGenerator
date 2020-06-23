@@ -57,6 +57,7 @@ function promptInfo() {
 function generateMD(answers) {
   return `# ${answers.title}\n## Description \n
 ${answers.description} \n
+![Link to creator's GitHub](https://github.com/${answers.gitHub}) \n
 ## Table of Contents \n
 - [Installation](#installation) \n
 - [usage](#usage) \n
@@ -64,8 +65,6 @@ ${answers.description} \n
 - [Contributing](#contributing) \n
 ## Installation \n
 ${answers.installation} \n
-## License \n
-${answers.license} \n
 ## Usage \n
 ${answers.usage} \n
 ## Contributing \n
@@ -73,9 +72,10 @@ ${answers.contributing} \n
 ## Badges \n
 ![uniquebadge](https://img.shields.io/static/v1?label=${
     answers.badge.split(" ")[0]
-  }&message=${answers.badge.split(" ")[1]}&color=${
-    answers.badge.split(" ")[2]
-  })`;
+  }&message=${answers.badge.split(" ")[1]}&color=${answers.badge.split(" ")[2]})
+## License \n
+${answers.license} \n
+  `;
 }
 
 // this function should wait for the prompt to be completed, then it will generate the info for the md file then create the file

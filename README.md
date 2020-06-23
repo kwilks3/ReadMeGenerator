@@ -19,16 +19,16 @@ test
 
 ## License 
 
-test 
+t 
 
 ## Usage 
 
-test 
+tet 
 
 ## Contributing 
 
-test 
+tes 
 
 ## Badges 
 
-![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
+![uniquebadge](https://img.shields.io/static/v1?label=build&message=passed&color=green

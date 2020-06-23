@@ -1,8 +1,12 @@
+// packages needed for file
 const fs = require("fs");
 const inquirer = require("inquirer");
 const util = require("util");
+const { makeBadge, ValidationError } = require("badge-maker");
 
 const writefileAsync = util.promisify(fs.writeFile);
+
+// prompt the user for all their info
 function promptInfo() {
   return inquirer.prompt([
     {
@@ -40,8 +44,16 @@ function promptInfo() {
       name: "contributing",
       message: "How can others contribute?",
     },
+    {
+      type: "input",
+      name: "badge",
+      message:
+        "Input your badge label, message, and color separated by spaces.",
+    },
   ]);
 }
+
+// generate the info for the markdown file
 function generateMD(answers) {
   return `# ${answers.title}\n## Description \n
 ${answers.description} \n
@@ -59,12 +71,19 @@ ${answers.usage} \n
 ## Contributing \n
 ${answers.contributing} \n
 ## Badges \n
-![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)`;
+![uniquebadge](https://img.shields.io/static/v1?label=${
+    answers.badge.split(" ")[0]
+  }&message=${answers.badge.split(" ")[1]}&color=${
+    answers.badge.split(" ")[2]
+  }`;
 }
+
+// this function should wait for the prompt to be completed, then it will generate the info for the md file then create the file
 async function init() {
   try {
     const answers = await promptInfo();
     const md = generateMD(answers);
+
     await writefileAsync("README.md", md);
     console.log("Successfully created README");
   } catch (err) {

@@ -1,10 +1,14 @@
-# test
+# README Generator
 
 ## Description
 
-test
+Create an automated README
 
-[Link to creator's GitHub](https://github.com/kwilks3)
+Check out all of my other projects [here.](https://github.com/kwilks3)
+
+Demo
+
+<iframe src='//gifs.com/embed/demo-YWw0G2' frameborder='0' scrolling='no' width='1920px' height='1080px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
 
 ## Table of Contents
 
@@ -18,15 +22,15 @@ test
 
 ## Installation
 
-test
+n/a
 
 ## Usage
 
-test
+n/a
 
 ## Contributing
 
-test
+N/A
 
 ## Badges
 
@@ -34,4 +38,4 @@ test
 
 ## License
 
-test
+MIT

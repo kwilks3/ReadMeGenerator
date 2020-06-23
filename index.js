@@ -2,7 +2,6 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
 const util = require("util");
-const { makeBadge, ValidationError } = require("badge-maker");
 
 const writefileAsync = util.promisify(fs.writeFile);
 
@@ -57,7 +56,9 @@ function promptInfo() {
 function generateMD(answers) {
   return `# ${answers.title}\n## Description \n
 ${answers.description} \n
-[Link to creator's GitHub](https://github.com/${answers.gitHub}) \n
+Check out all of my other projects [here.](https://github.com/${
+    answers.gitHub
+  }) \n
 ## Table of Contents \n
 - [Installation](#installation) \n
 - [usage](#usage) \n

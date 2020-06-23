@@ -1,37 +1,37 @@
 # test
-## Description 
 
-test 
+## Description
 
-![Link to creator's GitHub](https://github.com/kwilks3) 
+test
 
-## Table of Contents 
+[Link to creator's GitHub](https://github.com/kwilks3)
 
-- [Installation](#installation) 
+## Table of Contents
 
-- [usage](#usage) 
+- [Installation](#installation)
 
-- [license](#license) 
+- [usage](#usage)
 
-- [Contributing](#contributing) 
+- [license](#license)
 
-## Installation 
+- [Contributing](#contributing)
 
-test 
+## Installation
 
-## Usage 
+test
 
-test 
+## Usage
 
-## Contributing 
+test
 
-test 
+## Contributing
 
-## Badges 
+test
+
+## Badges
 
 ![uniquebadge](https://img.shields.io/static/v1?label=build&message=passed&color=green)
-## License 
 
-test 
+## License
 
-  
+test
